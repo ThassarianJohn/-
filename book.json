@@ -1,0 +1,21 @@
+{
+    "title"    : "人工智能",
+    "language": "zh-hans",
+    "plugins"  : [
+        "-lunr",
+        "-search",
+        "search-plus",
+        "duoshuo",
+        "ad"
+    ],
+    "pluginsConfig": {
+        "duoshuo": {
+            "short_name": "人工智能",
+            "theme": "default"
+        },
+        "ad": {
+            "contentTop": "<img src=''>Ads at the top of the page</img>",
+            "contentBottom": "%3Cdiv%3EAds%20at%20the%20bottom%20of%20the%20page%3C/div%3E"
+        }
+    }
+}
