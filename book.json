@@ -1,21 +1,45 @@
 {
-    "title"    : "人工智能",
+    "title": "人工智能",
     "language": "zh-hans",
-    "plugins"  : [
+    "plugins": [
         "-lunr",
         "-search",
         "search-plus",
-        "duoshuo",
-        "ad"
+        "-duoshuo",
+        "ad",
+        "favicon",
+        "anchor-navigation-ex",
+        "expandable-chapters-small",
+        "-toggle-chapters",
+        "tbfed-pagefooter",
+        "splitter",
+        "-ace",
+        "-theme-comscore",
+        "-sharing"
     ],
     "pluginsConfig": {
-        "duoshuo": {
-            "short_name": "人工智能",
-            "theme": "default"
-        },
         "ad": {
-            "contentTop": "<img src=''>Ads at the top of the page</img>",
-            "contentBottom": "%3Cdiv%3EAds%20at%20the%20bottom%20of%20the%20page%3C/div%3E"
+            "contentTop": "<img src=''></img>",
+            "contentBottom": "<img src=''></img>"
+        },
+        "favicon": {
+            "shortcut": "assets/Brain_Games_128px_1125906_easyicon.net.ico",
+            "bookmark": "assets/Brain_Games_128px_1125906_easyicon.net.ico",
+            "appleTouch": "assets/Brain_Games_128px_1125906_easyicon.net.ico",
+            "appleTouchMore": {
+                "120x120": "assets/Brain_Games_128px_1125906_easyicon.net.ico",
+                "180x180": "assets/Brain_Games_128px_1125906_easyicon.net.ico"
+            }
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright &copy Civia 2017",
+            "modify_label": "修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "fontsettings": {
+            "theme": "sepia",
+            "family": "serif",
+            "size": 1
         }
     }
 }
