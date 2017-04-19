@@ -19,8 +19,8 @@
     ],
     "pluginsConfig": {
         "ad": {
-            "contentTop": "<img src=''></img>",
-            "contentBottom": "<img src=''></img>"
+            "contentTop": "<a target=\"_blank\" href=\"http:\/\/shareasale.com\/r.cfm?b=922568&amp;u=1507096&amp;m=47&amp;urllink=&amp;afftrack=\"><img src=\"http:\/\/static.shareasale.com\/image\/47\/ShareASale-468x60-B-Light.png\" border=\"0\" \/><\/a>",
+            "contentBottom": "<a target=\"_blank\" href=\"http:\/\/shareasale.com\/r.cfm?b=922568&amp;u=1507096&amp;m=47&amp;urllink=&amp;afftrack=\"><img src=\"http:\/\/static.shareasale.com\/image\/47\/ShareASale-468x60-B-Light.png\" border=\"0\" \/><\/a>"
         },
         "favicon": {
             "shortcut": "assets/Brain_Games_128px_1125906_easyicon.net.ico",
