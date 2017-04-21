@@ -15,7 +15,8 @@
         "splitter",
         "-ace",
         "-theme-comscore",
-        "-sharing"
+        "-sharing",
+        "sitemap-general"
     ],
     "pluginsConfig": {
         "ad": {
@@ -40,6 +41,9 @@
             "theme": "sepia",
             "family": "serif",
             "size": 1
+        },
+        "sitemap-general": {
+            "prefix": "https://ai.civia.cn"
         }
     }
 }
