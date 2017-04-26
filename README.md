@@ -10,7 +10,7 @@
 * [Python]()
  * [Anaconda [集成开发环境]](/Python/anaconda.md)
  * [Matplotlib [绘图制表]](/Python/matplotlib.md)
- * [NumPy [矩阵运算]](/Python/numPy.md)
+ * [NumPy [矩阵运算]](/Python/numpy.md)
  * [SciPy [科学计算]](/Python/scipy.md)
  * [SymPy [数学符号]](/Python/sympy.md)
  * [Cython [C扩展模块]](/Python/cython.md)
