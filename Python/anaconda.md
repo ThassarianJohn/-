@@ -3,15 +3,44 @@ Anaconda
 
 Anaconda是一个用于科学计算的Python发行版。
 
-Anaconda windows版的安装非常简单，从[官网](https://www.continuum.io/)上下载安装包并按步骤安装即可。
-
 Anaconda包括[conda](#1-conda)、Spyder、ipython和Jupyter Notebook四个工具，本文将分别进行介绍。
 
-# Conda
+## 安装
+
+Anaconda **windows版的安装**非常简单，从[官网](https://www.continuum.io/)上下载安装包并按步骤安装即可。
+
+**centOS7下Anaconda安装步骤**：
+
+安装bzip2：
+
+```bash
+$ yum install -y bzip2
+```
+
+到官网找到Linux版下载链接下载：
+
+```bash
+$ wget https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh
+```
+
+安装
+
+```bash
+$ bash Anaconda3-4.4.0-Linux-x86_64.sh
+```
+
+完成后，输入命令使系统路径立即生效：
+
+```bash
+$ source /root/.bashrc
+```
+
+
+## Conda
 
 conda是它的常用可执行命令工具，其核心功能是**包管理**与**环境管理**。
 
-## Conda的环境管理
+#### Conda的环境管理
 
 这里我们以一个名为python34的环境为例，进行相关操作。
 
@@ -47,7 +76,7 @@ $ conda remove --name python34 --all
 $ conda info -e
 ```
 
-## Conda的包管理
+#### Conda的包管理
 
 * 查看当前环境下已安装的包
 
@@ -123,6 +152,7 @@ $ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs
 $ conda config --set show_channel_urls yes
 ```
 
-# 参考资料
+## 参考资料
 
-《[Anaconda使用总结](http://python.jobbole.com/86236/)》
+- 《[Anaconda使用总结](http://python.jobbole.com/86236/)》
+- [centos安装 Anaconda3及使用](http://www.cnblogs.com/xiao-apple36/p/9052102.html)
