@@ -2,6 +2,14 @@
 
 **安装jdk**
 
+yum安装：
+
+```
+$ yum -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel
+```
+
+或手动安装：
+
 下载并解压
 
 配置环境变量
