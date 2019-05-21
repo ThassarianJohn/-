@@ -35,7 +35,7 @@
 - [CNTK](https://github.com/Microsoft/CNTK)：微软开源
 - [PaddlePaddle](https://github.com/PaddlePaddle/Paddle)：百度开源
 
-会议竞赛：
+## 会议与竞赛：
 
 - KDD杯和IJCAI机器学习竞赛
 - [IJCAI](http://ijcai.org/)国际人工智能联合会议

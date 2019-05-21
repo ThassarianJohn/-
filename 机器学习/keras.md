@@ -52,15 +52,15 @@ conda install -c conda-forge keras
 
 - 最后确认安装
 
- * 打开一个命令行
+	- 打开一个命令行
 
- * 激活tensorflow环境：activate tf
+	- 激活tensorflow环境：activate tf
 
- * 输入python打开命令行控制台
+	- 输入python打开命令行控制台
 
- * 执行：from keras.models import Sequential
+	- 执行：from keras.models import Sequential
 
- * 正常加载，则测试通过
+	- 正常加载，则测试通过
 
 ```
 环境搭建完成后，Anaconda的开始菜单目录下会多出一些对应环境配置的工具。
@@ -134,30 +134,12 @@ Y_test = model.predict(X_test, batch_size=32)
 
 在训练一个模型之前，需要配置它的学习过程，这是通过compile函数来做的。
 
-它接受三个参数： 
+它接受三个参数：
+
 - **优化器([optimizers](https://keras.io/optimizers/))**：它可以是现有的优化器的字符串标识符（例如 rmsprop 或者 adagrad），也可以是优化器类的实例；
 - **损失函数([losses](https://keras.io/losses/))**：这是模型想要最小化的目标函数，它可以是一个现存的损失函数的字符串标识符(比如 categorical_crossentropy 或者 mse)，也可以是一个目标函数；
 - **度量值列表([metrics](https://keras.io/metrics/))**：对于任何的聚类问题你将要把它设置为metrics=[‘accuracy’]，一个度量值可以是一个已存在的度量的字符串标识符或者是一个自定义度量函数。
 
-**optimizers**优化器
-
-**loss**损失函数
-
-**mse**:mean_squared_error，均方差，常用的目标函数，公式为((y_pred-y_true)**2).mean()
-
-**mae**:mean_absolute_error，绝对值均差，公式为(|y_pred-y_true|).mean()
-
-**mape**:mean_absolute_percentage_error，绝对值均差百分比， 公式为：(|(y_true - y_pred) / clip((|y_true|),epsilon, infinite)|).mean(axis=-1) * 100，和mae的区别就是，累加的是（预测值与实际值的差）除以（剔除不介于epsilon和infinite之间的实际值)，然后求均值。
-
-**msle**:mean_squared_logarithmic_error，均方差对数，公式为： (log(clip(y_pred, epsilon, infinite)+1)- log(clip(y_true, epsilon,infinite)+1.))^2.mean(axis=-1)，这个就是加入了log对数，剔除不介于epsilon和infinite之间的预测值与实际值之后，然后取对数，作差，平方，累加求均值。
-
-squared_hinge 公式为：(max(1-y_true*y_pred,0))^2.mean(axis=-1)，取1减去预测值与实际值乘积的结果与0比相对大的值的平方的累加均值。
-
-hinge 公式为：(max(1-y_true*y_pred,0)).mean(axis=-1)，取1减去预测值与实际值乘积的结果与0比相对大的值的的累加均值。
-
-binary_crossentropy: 常说的逻辑回归, 就是常用的交叉熵函数
-
-categorical_crossentropy: 多分类的逻辑， 交叉熵函数的一种变形吧，没看太明白
 
 #### 训练
 
