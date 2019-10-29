@@ -164,6 +164,6 @@ model = load_model('my_model.h5')
 
 ## 参考资料
 
-[Keras中文文档](http://keras-cn.readthedocs.io/en/latest/)
-
-[Keras 时序模型](http://blog.csdn.net/thinking_boy1992/article/details/53207177)
+- [Keras中文文档](http://keras-cn.readthedocs.io/en/latest/)
+- [Keras 时序模型](http://blog.csdn.net/thinking_boy1992/article/details/53207177)
+- [keras快速搭建神经网络系列视频——莫烦](https://morvanzhou.github.io/tutorials/machine-learning/keras/)

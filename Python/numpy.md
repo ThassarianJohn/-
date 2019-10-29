@@ -1,7 +1,11 @@
-NumPy
----
+# NumPy
 
-# 简介
+## 目录
+
+- [简介]()
+- [使用]()
+
+## 简介
 
 NumPy是一个基于Python数组和矩阵的运算库。
 
@@ -15,11 +19,12 @@ NumPy是一个基于Python数组和矩阵的运算库。
 import numpy as np
 ```
 
-# 使用
+## 使用
 
-## array对象
+### array对象
 
-### 创建
+
+#### 创建
 
 首先需要创建数组才能对其进行其它操作。
 
@@ -453,5 +458,6 @@ array([ 0,  2,  5,  9, 14, 20, 27, 35])
 # 参考资料
 
 - 《[NumPy的详细教程](http://www.tuicool.com/articles/r2yyei)》
-
 - 《[NumPy-快速处理数据](http://old.sebug.net/paper/books/scipydoc/numpy_intro.html)》
+- 《[python中的矩阵运算](https://www.cnblogs.com/chamie/p/4870078.html)》
+- 《[numpy下的轴交换transpose和 swapaxes的解读](https://blog.csdn.net/sinat_36306474/article/details/80745490)》
