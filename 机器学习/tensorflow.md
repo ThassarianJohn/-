@@ -26,7 +26,7 @@ TensorFlow项目最初是由，来自谷歌机器智能研究组织谷歌大脑�
 我的环境配置
 操作系统：windows 10
 CPU    ：AMD 64位
-Python ：Anaconda4.1.1 python3.5.2
+Python ：Anaconda4.8.2 python3.6.8
 ```
 
 * 创建tensorflow环境
@@ -55,17 +55,17 @@ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorfl
 
 注意，此处的包路径，以及包名，应当根据具体情况填写。
 
-* 最后确认安装
+- 最后确认安装
 
-  * 打开一个命令行
+  - 打开一个命令行
 
-  * 激活tf环境：activate tf
+  - 激活 tf 环境：activate tf
 
-  * 创建一个测试文件test.py
+  - 创建一个测试文件 "test.py"
 
-  * 执行测试文件：python test.py
+  - 执行测试文件：python test.py
 
-  * 打印 'Hello, TensorFlow!'，测试通过
+  - 打印 'Hello, TensorFlow!'，测试通过
 
 ```py
 # test.py
@@ -76,5 +76,18 @@ sess = tf.Session()
 print(sess.run(hello))
 ```
 
+- 查看当前 tensorflow 版本
 
+  - 输入python打开命令行控制台
+
+  - 加载 tensorflow 模块		：import tensorflow as tf
+
+  - 打印当前 tensorflow 版本	：print(tf.__version__)	
+
+
+- 更新 tensorflow 版本
+
+```cmd
+conda update tensorflow
+```
 

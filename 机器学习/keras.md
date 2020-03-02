@@ -8,9 +8,9 @@
 
 ## 开发环境搭建
 
-- 安装[anaconda](/大数据分析/机器学习/Anaconda.md)开发环境
+- 安装[anaconda](/机器学习/Anaconda.md)集成开发环境
 
-- 安装[tensorflow](/大数据分析/机器学习/TensorFlow.md)环境
+- 安装[tensorflow](/机器学习/TensorFlow.md)环境
 
 ```cmd
 conda install -c conda-forge tensorflow
@@ -62,11 +62,29 @@ conda install -c conda-forge keras
 
 	- 正常加载，则测试通过
 
+
+- 查看当前 keras 版本
+
+	- 输入"python"打开命令行控制台
+
+	- 加载 keras 模块	：import keras
+
+	- 打印当前 keras 版本	：print(keras.__version__)	
+
+
+- 更新 keras 版本
+
+```cmd
+conda update keras
+```
+
+
 ```
 环境搭建完成后，Anaconda的开始菜单目录下会多出一些对应环境配置的工具。
 可以使用Spyder工具进行开发和调试。
 当然也可以继续用我们熟悉的Sublime Text。
 ```
+
 
 ## 基本介绍
 
@@ -164,6 +182,6 @@ model = load_model('my_model.h5')
 
 ## 参考资料
 
-- [Keras中文文档](http://keras-cn.readthedocs.io/en/latest/)
+- [Keras 中文文档](http://keras-cn.readthedocs.io/en/latest/)
 - [Keras 时序模型](http://blog.csdn.net/thinking_boy1992/article/details/53207177)
-- [keras快速搭建神经网络系列视频——莫烦](https://morvanzhou.github.io/tutorials/machine-learning/keras/)
+- [keras 快速搭建神经网络系列视频——莫烦](https://morvanzhou.github.io/tutorials/machine-learning/keras/)

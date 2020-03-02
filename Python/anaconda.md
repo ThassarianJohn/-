@@ -1,9 +1,18 @@
 Anaconda
 ---
 
-Anaconda是一个用于科学计算的Python发行版。
+## 简介
 
-Anaconda包括[conda](#1-conda)、Spyder、ipython和Jupyter Notebook四个工具，本文将分别进行介绍。
+Anaconda是一个用于科学计算的Python集成开发环境，它能够：
+
+- 方便快捷地下载和管理7,500多 Python/R 数据科学软件包
+- 使用 Conda管理软件库、软件依赖关系和开发环境
+
+Anaconda包括[Conda](#Conda)、Anaconda-navigator、Spyder、ipython和Jupyter Notebook等工具，本文将重点介绍[Conda](#Conda)。
+
+- [Conda](#Conda)：命令行开发环境管理与包管理工具
+- Anaconda-navigator：图形化的开发环境管理与包管理工具
+
 
 ## 安装
 
@@ -38,7 +47,8 @@ $ source /root/.bashrc
 
 ## Conda
 
-conda是它的常用可执行命令工具，其核心功能是**包管理**与**环境管理**。
+Conda是Anaconda的常用可执行命令工具，其核心功能是**包管理**与**环境管理**。
+
 
 #### Conda的环境管理
 
@@ -75,6 +85,7 @@ $ conda remove --name python34 --all
 ```cmd
 $ conda info -e
 ```
+
 
 #### Conda的包管理
 
@@ -122,7 +133,7 @@ $ conda remove -n python34 numpy
 
 新建的环境只安装了指定的包，如果希望像默认环境那样，需安装anaconda集合包。
 
-* 在当前环境下安装anaconda包集合
+* 在当前环境下安装anaconda集合包
 
 ```cmd
 $ conda install anaconda
@@ -136,7 +147,19 @@ $ conda create -n python34 python=3.4 anaconda
 
 *也可以不用全部安装，根据需求安装自己需要的package即可*
 
-## 设置国内镜像
+
+#### 用Conda升级Anaconda
+
+用Conda升级Anaconda需要先升级conda
+
+```
+conda update conda
+conda update anaconda
+conda update anaconda-navigator
+```
+
+
+#### 为Conda设置国内镜像
 
 因为Anaconda.org的服务器在国外，conda下载的速度可能会很慢。
 
@@ -152,7 +175,10 @@ $ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs
 $ conda config --set show_channel_urls yes
 ```
 
+
 ## 参考资料
 
-- 《[Anaconda使用总结](http://python.jobbole.com/86236/)》
+- [Anaconda官网](https://www.anaconda.com/)
+- [Anaconda使用总结](http://python.jobbole.com/86236/)
 - [centos安装 Anaconda3及使用](http://www.cnblogs.com/xiao-apple36/p/9052102.html)
+- [conda升级命令-升级conda、anaconda及各种包](https://blog.csdn.net/weixin_41481113/article/details/88410648)
