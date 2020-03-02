@@ -14,9 +14,9 @@ squared_hinge 公式为：(max(1-y_true*y_pred,0))^2.mean(axis=-1)，取1减去�
 
 hinge 公式为：(max(1-y_true*y_pred,0)).mean(axis=-1)，取1减去预测值与实际值乘积的结果与0比相对大的值的的累加均值。
 
-**binary_crossentropy**: 二分类，常说的逻辑回归, 就是常用的交叉熵函数
+**binary_crossentropy**: 二元分类，常说的逻辑回归, 就是常用的交叉熵函数
 
-**categorical_crossentropy**: 多分类的逻辑， 交叉熵函数的一种变形吧，没看太明白
+**categorical_crossentropy**: 多元分类， 交叉熵函数的一种变形
 
 
 ## 自定义损失函数

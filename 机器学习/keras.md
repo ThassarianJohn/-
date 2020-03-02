@@ -1,16 +1,19 @@
 # Keras
 
-[Keras官网](https://keras.io/)
-
-[Keras-github](https://github.com/fchollet/keras)
-
-[Keras中文文档](http://keras-cn.readthedocs.io/en/latest/)
+- [神经网络](/机器学习/神经网络.md)
+	- [网络层](/机器学习/网络层.md)
+	- [激活函数](/机器学习/激活函数.md)
+- [编译]()
+	- [优化器](/机器学习/优化器.md)
+	- [损失函数](/机器学习/损失函数.md)
+	- [评估标准](/机器学习/评估标准.md)
+- [训练]()
 
 ## 开发环境搭建
 
-- 安装[anaconda](/机器学习/Anaconda.md)集成开发环境
+- 安装[anaconda](/Python/anaconda.md)集成开发环境
 
-- 安装[tensorflow](/机器学习/TensorFlow.md)环境
+- 安装[tensorflow](/机器学习/tensorflow.md)环境
 
 ```cmd
 conda install -c conda-forge tensorflow
@@ -69,8 +72,7 @@ conda install -c conda-forge keras
 
 	- 加载 keras 模块	：import keras
 
-	- 打印当前 keras 版本	：print(keras.__version__)	
-
+	- 打印当前 keras 版本	：```print(keras.__version__)```
 
 - 更新 keras 版本
 
@@ -156,7 +158,7 @@ Y_test = model.predict(X_test, batch_size=32)
 
 - **优化器([optimizers](https://keras.io/optimizers/))**：它可以是现有的优化器的字符串标识符（例如 rmsprop 或者 adagrad），也可以是优化器类的实例；
 - **损失函数([losses](https://keras.io/losses/))**：这是模型想要最小化的目标函数，它可以是一个现存的损失函数的字符串标识符(比如 categorical_crossentropy 或者 mse)，也可以是一个目标函数；
-- **度量值列表([metrics](https://keras.io/metrics/))**：对于任何的聚类问题你将要把它设置为metrics=[‘accuracy’]，一个度量值可以是一个已存在的度量的字符串标识符或者是一个自定义度量函数。
+- **度量值列表([metrics](https://keras.io/metrics/))**：对于任何的聚类问题你将要把它设置为metrics=['accuracy']，一个度量值可以是一个已存在的度量的字符串标识符或者是一个自定义度量函数。
 
 
 #### 训练
@@ -166,6 +168,7 @@ Y_test = model.predict(X_test, batch_size=32)
 loss，训练损失
 
 val_loss，验证损失，你用的测试数据，val_loss就是测试损失
+
 
 #### 模型的保存与加载
 
@@ -182,6 +185,8 @@ model = load_model('my_model.h5')
 
 ## 参考资料
 
+- [Keras官网](https://keras.io/)
+- [Keras-github](https://github.com/fchollet/keras)
 - [Keras 中文文档](http://keras-cn.readthedocs.io/en/latest/)
 - [Keras 时序模型](http://blog.csdn.net/thinking_boy1992/article/details/53207177)
 - [keras 快速搭建神经网络系列视频——莫烦](https://morvanzhou.github.io/tutorials/machine-learning/keras/)

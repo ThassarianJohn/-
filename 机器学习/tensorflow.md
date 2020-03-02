@@ -82,7 +82,7 @@ print(sess.run(hello))
 
   - 加载 tensorflow 模块		：import tensorflow as tf
 
-  - 打印当前 tensorflow 版本	：print(tf.__version__)	
+  - 打印当前 tensorflow 版本	：```print(tf.__version__)```
 
 
 - 更新 tensorflow 版本
