@@ -7,15 +7,20 @@
 
 ## 简介
 
-本库主要是基于python的AI方向研究学习资料的整理。
+本库是基于 Python 的 AI 方向研究学习资料的整理。
 
 常见的AI开发工作如下：
 
 - 使用 scikit-learn, TensorFlow 和 Theano 开发和训练机器学习、深度学习模型
-- 使用 Dask, NumPy, pandas 和 Numba 等数据分析工具分析数据
+- 使用 Dask, NumPy, Pandas 和 Numba 等数据分析工具分析数据
 - 使用 Matplotlib, Bokeh, Datashader 和 Holoviews 等可视化工具直观地呈现数据
 
-本库将挑选其中最流行的几种工具进行学习。
+本库将对以 TensorFlow 为后台的 Keras 进行深入学习。
+
+其他值得关注的框架：
+
+- [DeepLearning4J](https://deeplearning4j.org/cn/index.html)：DL4J，java版keras，天然与 Spark、Flink 兼容。
+- [fast.ai](https://course.fast.ai/)：PyTorch版keras。
 
 
 ## 目录
